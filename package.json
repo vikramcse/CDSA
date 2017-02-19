@@ -1,0 +1,31 @@
+{
+  "name": "CDSA",
+  "version": "1.0.0",
+  "description": "The Collection of Data Structures and Algorithms (CDSA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha -R spec --recursive src/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikramcse/CDSA.git"
+  },
+  "keywords": [
+    "datastructure",
+    "algorithms",
+    "stack"
+  ],
+  "author": {
+    "name": "Vikram jadhav",
+    "url": "http://github.com/vikramcse"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikramcse/CDSA/issues"
+  },
+  "homepage": "https://github.com/vikramcse/CDSA#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
