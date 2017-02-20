@@ -52,4 +52,21 @@ describe('Testing Stack', function () {
     assert.equal(s.isEmpty(), false);
   });
 
+  it('testing forEach to stack', function() {
+    var s = new Stack();
+    s.push(1);
+    s.push(2);
+    s.push('Three');
+    s.push(4.0);
+
+    s.forEach(function(item, index, stack) {
+      assert.equal(s, stack);
+
+      if (index === stack.getSize() - 1) {
+        assert.equal(s.peek(), 4.0);
+      }
+    });
+  });
+
+
 });

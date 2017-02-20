@@ -76,4 +76,22 @@ Stack.prototype.toArray = function() {
 };
 
 
+/**
+ * This function will provide iterating functionality
+ * for stack data structure, we can pass a callback
+ * to foreach function
+ * @param callback
+ */
+Stack.prototype.forEach = function(callback) {
+  var len = this.items.length;
+  var ctx = this;
+
+  for (var i = 0; i < len; i++) {
+    // the call takes context, currentItem, index, stack
+    // here this is a current context is Stack
+    callback.call(ctx, this.items[len - i - 1], i, this);
+  }
+};
+
+
 module.exports = Stack;
