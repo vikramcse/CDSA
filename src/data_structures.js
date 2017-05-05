@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-  Stack: require('./ds/Stack')
+  Stack: require('./ds/Stack'),
+  Queue: require('./ds/Queue')
 };
